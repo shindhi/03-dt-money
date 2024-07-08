@@ -83,8 +83,8 @@ export const CloseButton = styled(Dialog.Close)`
 
 export const TransactionType = styled(RadioGroup.Root)`
   display: grid;
-  grid-template: repeat(2, 1fr);
-  gap: 1.4rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem;
   margin-top: .8rem;
 `
 
@@ -117,9 +117,9 @@ export const TransactionTypeButton = styled(RadioGroup.Item)<TransactionTypeButt
     background: ${({ theme }) => theme['gray-600']};
   }
 
-  &[data-state='unchecked']:hover {
+  &[data-state='checked'] {
     transition: background .2s;
-    background: ${({ theme, variant }) => variant === 'income' ? theme['green-700'] : theme['red-500']};
+    background: ${({ theme, variant }) => variant === 'income' ? theme['green-500'] : theme['red-500']};
 
     > svg {
       color: ${({ theme }) => theme.white};
