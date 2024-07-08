@@ -23,6 +23,30 @@
       "category": "Educação",
       "price": 1980,
       "createdAt": "2024-07-07T22:40:51.740Z"
+    },
+    {
+      "description": "Iogurte",
+      "price": 5,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2024-07-08T20:55:24.236Z",
+      "id": 4
+    },
+    {
+      "description": "Pastel",
+      "price": 5,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2024-07-08T20:56:18.281Z",
+      "id": 5
+    },
+    {
+      "description": "Desenvolvimento de app",
+      "price": 10000,
+      "category": "Desenvolvimento",
+      "type": "income",
+      "createdAt": "2024-07-08T20:56:37.743Z",
+      "id": 6
     }
   ]
 }
