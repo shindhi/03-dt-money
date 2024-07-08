@@ -43,7 +43,7 @@ export const Content = styled(Dialog.Content)`
     button[type="submit"] {
       height: 5.8rem;
       border: 0;
-      background: ${({ theme }) => theme['gray-500']};
+      background: ${({ theme }) => theme['green-500']};
       color: ${({ theme }) => theme.white};
       font-weight: 700;
       padding: 0 2rem;
@@ -52,8 +52,13 @@ export const Content = styled(Dialog.Content)`
       
       cursor: pointer;
 
-      &:hover {
-        background: ${({ theme }) => theme['gray-700']};
+      &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+
+      &:not(:disabled):hover {
+        background: ${({ theme }) => theme['green-700']};
         transition: background .2s;
       }
     }
