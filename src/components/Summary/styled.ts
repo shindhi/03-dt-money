@@ -6,7 +6,7 @@ export const SummaryContainer = styled.section`
   margin: 0 auto;
   padding: 0 2.4rem;
   margin-top: -8rem;
-  
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3.2rem;
@@ -34,7 +34,9 @@ export const SummaryCard = styled.div<SummaryCardProps>`
     font-size: 3.2rem;
   }
 
-  ${({ variant }) => variant === 'green' && css`
-    background: ${({ theme }) => theme['green-700']};
-  `}
+  ${({ variant }) =>
+    variant === 'green' &&
+    css`
+      background: ${({ theme }) => theme['green-700']};
+    `}
 `

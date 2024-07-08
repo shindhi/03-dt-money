@@ -28,7 +28,7 @@ export function Summary() {
 
         <strong>{priceFormatter.format(summary.outcome)}</strong>
       </SummaryCard>
-      
+
       <SummaryCard>
         <header>
           <span>Total</span>

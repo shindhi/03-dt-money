@@ -23,7 +23,7 @@ export const Content = styled(Dialog.Content)`
 
   form {
     margin-top: 3.2rem;
-    
+
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
@@ -40,7 +40,7 @@ export const Content = styled(Dialog.Content)`
       }
     }
 
-    button[type="submit"] {
+    button[type='submit'] {
       height: 5.8rem;
       border: 0;
       background: ${({ theme }) => theme['green-500']};
@@ -49,7 +49,7 @@ export const Content = styled(Dialog.Content)`
       padding: 0 2rem;
       border-radius: 6px;
       margin-top: 2.4rem;
-      
+
       cursor: pointer;
 
       &:disabled {
@@ -59,7 +59,7 @@ export const Content = styled(Dialog.Content)`
 
       &:not(:disabled):hover {
         background: ${({ theme }) => theme['green-700']};
-        transition: background .2s;
+        transition: background 0.2s;
       }
     }
   }
@@ -85,14 +85,16 @@ export const TransactionType = styled(RadioGroup.Root)`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.6rem;
-  margin-top: .8rem;
+  margin-top: 0.8rem;
 `
 
 interface TransactionTypeButtonProps {
   variant: 'income' | 'outcome'
 }
 
-export const TransactionTypeButton = styled(RadioGroup.Item)<TransactionTypeButtonProps>`
+export const TransactionTypeButton = styled(
+  RadioGroup.Item,
+)<TransactionTypeButtonProps>`
   color: ${({ theme }) => theme['gray-300']};
   background: ${({ theme }) => theme['gray-700']};
   padding: 1.6rem;
@@ -103,23 +105,25 @@ export const TransactionTypeButton = styled(RadioGroup.Item)<TransactionTypeButt
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: .8rem;
+  gap: 0.8rem;
 
   cursor: pointer;
-  
+
   > svg {
-    color: ${({ theme, variant }) => variant === 'income' ? theme['green-300'] : theme['red-300']};
+    color: ${({ theme, variant }) =>
+      variant === 'income' ? theme['green-300'] : theme['red-300']};
     font-size: 2.4rem;
   }
 
   &[data-state='unchecked']:hover {
-    transition: background .2s;
+    transition: background 0.2s;
     background: ${({ theme }) => theme['gray-600']};
   }
 
   &[data-state='checked'] {
-    transition: background .2s;
-    background: ${({ theme, variant }) => variant === 'income' ? theme['green-500'] : theme['red-500']};
+    transition: background 0.2s;
+    background: ${({ theme, variant }) =>
+      variant === 'income' ? theme['green-500'] : theme['red-500']};
 
     > svg {
       color: ${({ theme }) => theme.white};

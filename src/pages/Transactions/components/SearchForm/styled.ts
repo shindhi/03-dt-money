@@ -41,7 +41,7 @@ export const SearchFormContainer = styled.form`
       background: ${({ theme }) => theme['green-500']};
       border-color: ${({ theme }) => theme['green-500']};
       color: ${({ theme }) => theme.white};
-      transition: all .2s;
+      transition: all 0.2s;
     }
 
     > svg {
